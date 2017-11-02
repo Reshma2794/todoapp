@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>VUE-Editable</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono"> -->
+
+  </head>
+  <body>
+
+    <div id="app">
+      <todo_component> </todo_component>
+    </div>
+
+
+
+    <script src="dist/build.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>
+
+
+  </body>
+  <style type="text/css" media="screen">
+    body {
+      background-color: #fafafa;
+      font-family: Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    }
+    #app {
+      width: 680px;
+      padding: 15px 25px;
+      margin: 60px auto;
+      position: relative;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+
+
+    }
+
+    h1 {
+        margin: 0em;
+        text-align: center;
+        color: #42b983;
+    }
+    h5 {
+      color: #555;
+    }
+    a {
+      color: #07c;
+    }
+    pre code {
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      border: none;
+      background: transparent; }
+
+    .highlight pre {
+      background-color: #f8f8f8;
+      border: 1px solid #cccccc;
+      font-size: 13px;
+      line-height: 19px;
+      overflow: auto;
+      padding: 6px 10px;
+      border-radius: 3px; }
+
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #cccccc;
+      font-size: 13px;
+      line-height: 19px;
+      overflow: auto;
+      padding: 6px 10px;
+      border-radius: 3px; 
+    }
+
+    #trash
+    {
+      position:absolute;
+      right:10px;
+      top:1px;
+      visibility: hidden;
+      font-size:1.50em;
+    }
+    ul
+    {
+      position:relative;
+
+    }
+    ul li:hover #trash
+    {
+      visibility: visible;
+    }
+    pre code, pre tt {
+      background-color: transparent;
+      border: none; 
+    }
+
+    
+  </style>
+</html>
